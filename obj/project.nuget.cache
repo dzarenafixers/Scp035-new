@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dH65+yG44Ig=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moncef\\Desktop\\my scpsl project for servers (25)\\Scp035-1.0.8 wih mask\\Scp035-1.0.8\\Scp035\\Scp035.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moncef\\.nuget\\packages\\exmod.exiled\\9.3.0\\exmod.exiled.9.3.0.nupkg.sha512",
+    "C:\\Users\\moncef\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

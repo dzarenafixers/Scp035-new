@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scp035</name>
+    </assembly>
+    <members>
+        <member name="T:Scp035.Config">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Config.IsEnabled">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Config.Debug">
+            <summary>
+            Gets or sets a value indicating whether debug messages will be shown.
+            </summary>
+        </member>
+        <member name="P:Scp035.Config.Scp035ItemConfig">
+            <summary>
+            Item configs for 035.
+            </summary>
+        </member>
+        <member name="P:Scp035.Config.Scp035RoleConfig">
+            <summary>
+            Role configs for 035.
+            </summary>
+        </member>
+        <member name="T:Scp035.EventHandlers">
+            <summary>
+            Handles general events for this plugin.
+            </summary>
+        </member>
+        <member name="T:Scp035.Scp035Item">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Description">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Weight">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.SpawnProperties">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Type">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Item.Types">
+            <summary>
+            Gets or sets a list of <see cref="T:Scp035.ItemSpawn"/> values used to determine what <see cref="T:ItemType"/> the item will have when it spawns.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Item.TransformationDelay">
+            <summary>
+            Gets or sets how long the item takes to transform the player into SCP-035.
+            </summary>
+        </member>
+        <member name="F:Scp035.Scp035Item.ChangedPlayers">
+            <summary>
+            A list of players already transformed into SCP-035.
+            </summary>
+        </member>
+        <member name="M:Scp035.Scp035Item.Spawn(UnityEngine.Vector3,Exiled.API.Features.Player)">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Item.OnPickingUp(Exiled.Events.EventArgs.Player.PickingUpItemEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Item.OnDropping(Exiled.Events.EventArgs.Player.DroppingItemEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:Scp035.Plugin">
+            <inheritdoc />
+        </member>
+        <member name="F:Scp035.Plugin.Instance">
+            <summary>
+            Static reference to the main instance of this class.
+            </summary>
+        </member>
+        <member name="P:Scp035.Plugin.Author">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Plugin.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Plugin.Prefix">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Plugin.RequiredExiledVersion">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Plugin.EventHandlers">
+            <summary>
+            Gets the reference to this plugin's Event Handler class.
+            </summary>
+        </member>
+        <member name="M:Scp035.Plugin.OnEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Plugin.OnDisabled">
+            <inheritdoc />
+        </member>
+        <member name="T:Scp035.Scp035Role">
+            <summary>
+            The <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/> handler for SCP-035.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.VisibleRole">
+            <summary>
+            Gets or sets the role that is visible to players on the server aside from the player playing this role.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.MaxHealth">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.Description">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.CustomInfo">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.KeepInventoryOnSpawn">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.MovementMultiplier">
+            <summary>
+            Gets or sets a multiplier used to modify the player's movement speed (running and walking).
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.BlacklistedItems">
+            <summary>
+            Gets a list of item names that the player is unable to pickup while playing this role.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.DamagePerTick">
+            <summary>
+            Gets or sets how much damage per tick (1second) the player will take.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.Scale">
+            <summary>
+            Gets or sets the custom scale factor for players when they are this role.
+            </summary>
+        </member>
+        <member name="P:Scp035.Scp035Role.Role">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.CustomAbilities">
+            <inheritdoc />
+        </member>
+        <member name="P:Scp035.Scp035Role.SpawnProperties">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Role.AddRole(Exiled.API.Features.Player)">
+            <inheritdoc />
+            Hacky override to bypass bug in Exiled.CustomRoles
+        </member>
+        <member name="M:Scp035.Scp035Role.RoleAdded(Exiled.API.Features.Player)">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Role.RoleRemoved(Exiled.API.Features.Player)">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Role.SubscribeEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:Scp035.Scp035Role.UnsubscribeEvents">
+            <inheritdoc />
+        </member>
+        <member name="T:Scp035.ItemSpawn">
+            <summary>
+            Item Spawn chance and type.
+            </summary>
+        </member>
+        <member name="P:Scp035.ItemSpawn.Type">
+            <summary>
+            The <see cref="T:ItemType"/> the item will spawn as.
+            </summary>
+        </member>
+        <member name="P:Scp035.ItemSpawn.Chance">
+            <summary>
+            The chance of this item spawn being used.
+            </summary>
+        </member>
+        <member name="M:Scp035.ItemSpawn.#ctor(ItemType,System.Int32)">
+            <summary>
+            Constructs a new instance of this struct.
+            </summary>
+            <param name="type"><inheritdoc cref="P:Scp035.ItemSpawn.Type"/></param>
+            <param name="chance"><inheritdoc cref="P:Scp035.ItemSpawn.Chance"/></param>
+        </member>
+        <member name="M:Scp035.ItemSpawn.Deconstruct(ItemType@,System.Int32@)">
+            <summary>
+            Deconstructs the object into it's various parts.
+            </summary>
+            <param name="type"><inheritdoc cref="P:Scp035.ItemSpawn.Type"/></param>
+            <param name="chance"><inheritdoc cref="P:Scp035.ItemSpawn.Chance"/></param>
+        </member>
+    </members>
+</doc>
